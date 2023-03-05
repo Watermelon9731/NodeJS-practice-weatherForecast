@@ -18,16 +18,6 @@ hbs.registerPartials(partialsPath);
 
 app.use(express.static(publicDirectoryPath));
 
-// Setup API
-// const WEATHER_API = "http://api.weatherstack.com/";
-// const WEATHER_ACCESS_KEY = "9f699541109f01ea1fa5490a6511853f";
-// const WEATHER_LOCATION = "Vietnam";
-// const GEO_API = "http://api.ipstack.com/";
-// const GEO_ACCESS_KEY = "f596fa7497308baf12e19d8e27d28da0";
-// const GEO_IP = "42.117.31.134";
-
-// const WEATHER_URL = `${WEATHER_API}current?access_key=${WEATHER_ACCESS_KEY}&query=${WEATHER_LOCATION}`;
-
 app.get("/", (req, res) => {
   res.render("index", {
     title: "The Weather",
