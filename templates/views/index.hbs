@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    {{!-- <script src="./js/app.js"></script> --}}
+</head>
+
+<body>
+    {{>header}}
+    <h1>Welcome to NodeJS</h1>
+    <div class="content-container">
+        <button type="button" class="weather-app">
+            <a href="/the-weather">Weather app link</a>
+        </button>
+        <br />
+        <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/dc/dc7f72b242f9b13f6f7e8c2c5799c242ad9ae68c_full.jpg"
+            alt="random-avatar" />
+    </div>
+    {{>footer}}
+</body>
+
+</html>
